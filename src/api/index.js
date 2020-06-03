@@ -36,8 +36,6 @@ export const fetchData = async () => {
       death_rate: death_rate,
     };
 
-    console.log(modifiedData);
-
     return modifiedData;
   } catch (error) {
     console.log(error);

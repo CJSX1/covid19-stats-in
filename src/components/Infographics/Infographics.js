@@ -19,9 +19,11 @@ const Infographics = () => {
         <div className="col s12 m4">
           <img src={symptoms} alt="" className="img-border responsive-img" />
         </div>
-        <h6>
-          ** Infographics are free images from https://www.freepik.com/. You can
-          get awesome images for free as well as paid images for commercial use.
+        <h6 className="infographic-font">
+          ** Infographics are free images from{" "}
+          <a href="https://www.freepik.com/">Freepik</a>. <br />
+          **You can get awesome images for free as well as paid images for
+          commercial use.
         </h6>
       </div>
       <div className="row blue darken-4 border-bottom">

@@ -12,12 +12,53 @@ const Cards = ({
   },
 }) => {
   if (!confirmed_cases) {
-    return "Loading...";
+    return (
+      <div className="container">
+        <div className="row">
+          <div className="col s12 m3 l3">
+            <div className="center-align">
+              <p>Dashboard as on </p>
+              <p> Loading... </p>
+            </div>
+          </div>
+          <div className="col s12 m3 l3">
+            <div className="card blue lighten-2">
+              <div className="card-content black-text">
+                <span className="card-title">Loading...</span>
+                <p>Active Cases</p>
+              </div>
+            </div>
+          </div>
+          <div className="col s12 m3 l3">
+            <div className="card green lighten-2">
+              <div className="card-content black-text">
+                <span className="card-title">Loading...</span>
+                <p>Recovered</p>
+              </div>
+            </div>
+          </div>
+          <div className="col s12 m3 l3">
+            <div className="card red lighten-2">
+              <div className="card-content black-text">
+                <span className="card-title">Loading...</span>
+                <p>Death</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   return (
     <div className="container">
       <div className="row">
+        <div className="col s12 m3 l3">
+          <div className="center-align">
+            <p>Dashboard as on </p>
+            <p>{new Date(last_updated).toDateString()} </p>
+          </div>
+        </div>
         <div className="col s12 m3 l3">
           <div className="card blue lighten-2">
             <div className="card-content black-text">
@@ -61,11 +102,6 @@ const Cards = ({
               </span>
               <p>Death</p>
             </div>
-          </div>
-        </div>
-        <div className="col s12 m3 l3">
-          <div className="center-align">
-            <p>Dashboard as on : {last_updated}</p>
           </div>
         </div>
       </div>

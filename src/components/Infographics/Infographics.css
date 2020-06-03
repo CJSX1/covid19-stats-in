@@ -1,6 +1,10 @@
-.img-border{
-    border: 1px solid #ccc;
+.img-border {
+  border: 1px solid #ccc;
 }
-.border-bottom{
-    margin-bottom: 0% !important;
+.border-bottom {
+  margin-bottom: 0% !important;
+}
+.infographic-font {
+  font-size: x-small !important;
+  padding-left: 2%;
 }
